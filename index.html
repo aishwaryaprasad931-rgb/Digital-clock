@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>⏰ Digital Clock</h1>
+        <p class="subtitle">Your time, your moment.</p>
+
+        <section class="clock-card">
+            <p id="day">Loading...</p>
+            <div id="time">00:00:00</div>
+            <p id="period">AM</p>
+            <p id="date"></p>
+
+            <button id="formatBtn">Switch to 24-hour</button>
+        </section>
+
+        <div class="controls">
+            <button id="themeBtn">🌙 Dark Mode</button>
+        </div>
+
+        <section class="card">
+            <h2>⏱️ Stopwatch</h2>
+            <div id="stopwatch">00:00:00.00</div>
+
+            <div class="button-row">
+                <button id="startWatch">Start</button>
+                <button id="pauseWatch">Pause</button>
+                <button id="resetWatch">Reset</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>🔔 Set an Alarm</h2>
+            <input type="time" id="alarmTime" aria-label="Alarm time">
+            <button id="setAlarm">Set Alarm</button>
+            <button id="cancelAlarm">Cancel Alarm</button>
+            <p id="alarmStatus">No alarm set.</p>
+        </section>
+
+        <footer>Made with ❤️ using HTML, CSS & JavaScript</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

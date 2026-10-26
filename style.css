@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #222;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 34px;
+}
+
+.subtitle {
+    color: white;
+    margin: 10px 0 25px;
+}
+
+.clock-card,
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+#day {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+#time {
+    font-size: clamp(38px, 9vw, 65px);
+    font-weight: bold;
+    color: #6c4bd1;
+    font-variant-numeric: tabular-nums;
+}
+
+#period {
+    font-size: 20px;
+    margin: 5px;
+}
+
+#date {
+    margin: 12px 0 20px;
+    color: #555;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 15px;
+    margin: 5px;
+    background: #6c4bd1;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.controls {
+    margin: 15px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+#stopwatch {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-variant-numeric: tabular-nums;
+}
+
+input[type="time"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#alarmStatus {
+    margin-top: 15px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    color: white;
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+/* Dark mode */
+body.dark {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+body.dark .clock-card,
+body.dark .card {
+    background: #202b3c;
+    color: white;
+}
+
+body.dark #date {
+    color: #ddd;
+}
+
+@media (max-width: 400px) {
+    .clock-card,
+    .card {
+        padding: 18px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #stopwatch {
+        font-size: 28px;
+    }
+}
+
